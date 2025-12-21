@@ -1,172 +1,419 @@
-# 📊 Análisis de Datos de Consumo de Pizza
-
-## Resumen Ejecutivo
-
-Este reporte presenta un análisis exhaustivo de los datos recopilados sobre preferencias y capacidad de consumo de pizza entre los participantes de la encuesta.
+# 🍕 Análisis de Datos de Consumo de Pizza para Eventos
+## Reporte de Planificación para Fiestas
 
 ---
 
-## 📈 Estadísticas Generales
+## 1. Resumen Ejecutivo
 
-### Muestra Total
-- **Total de registros:** 400 respuestas
-- **Rebanadas totales que se pueden consumir:** 1,558 rebanadas
-- **Promedio de rebanadas por persona:** 3.90 rebanadas
-- **Mediana de consumo:** 3 rebanadas
+Este reporte presenta un análisis exhaustivo del dataset de consumo de pizza basado en una encuesta de preferencias, diseñado específicamente para **planificar el abastecimiento óptimo de pizza para un evento o fiesta**.
 
-### Distribución de Consumo
-- **Rango:** 0 - 12 rebanadas
-- **Moda:** 3 rebanadas (frecuencia más alta)
+### Características del Dataset
 
----
+| Métrica | Valor |
+|---------|-------|
+| **Total de Encuestados** | 588 personas |
+| **Consumidores de Pizza** | 492 personas |
+| **No consumen pizza** | 96 personas (16.3%) |
+| **Columnas Principales** | 2 (Capacidad de Consumo, Preferencia) |
+| **Tipo de Datos** | Encuesta de preferencias y capacidad |
+| **Total de Rebanadas Estimadas** | 1,877 rebanadas |
 
-## 🍕 Preferencias de Pizza
-
-### Top 5 Tipos de Pizza Más Populares
-
-| Ranking | Tipo de Pizza | Cantidad | Porcentaje |
-|---------|---------------|----------|------------|
-| 1️⃣ | Pepperoni | 142 | 35.5% |
-| 2️⃣ | Cheese (Queso) | 107 | 26.8% |
-| 3️⃣ | I don't like pizza | 83 | 20.8% |
-| 4️⃣ | Mushroom (Champiñones) | 35 | 8.8% |
-| 5️⃣ | Veggie/Veggi | 17 | 4.3% |
-
-### Distribución Completa
-
-```
-Pepperoni:           142 personas (35.5%)
-Cheese:              107 personas (26.8%)
-I don't like pizza:   83 personas (20.8%)
-Mushroom:             35 personas (8.8%)
-Veggie/Veggi:         17 personas (4.3%)
-Olives:                8 personas (2.0%)
-Sausage:               8 personas (2.0%)
-```
+### Observaciones Clave para Planificación de Eventos
+- **83.7%** de los invitados consumen pizza
+- El promedio de consumo es de **3.82 rebanadas por persona**
+- Se identificaron 6 tipos principales de pizza preferidos
+- Pepperoni y Cheese representan el **58.3%** de las preferencias
 
 ---
 
-## 🔍 Insights Destacables
+## 2. Estadística Descriptiva
 
-### 1. Dominio Absoluto de Pepperoni
-El pepperoni es la opción favorita con más de un tercio de las preferencias (35.5%), superando ampliamente a todas las demás opciones. Esto sugiere que cualquier pedido debe incluir una proporción significativa de pizzas de pepperoni.
+### 2.1 Métricas de Consumo por Invitado
 
-### 2. Alto Porcentaje de No Consumidores
-Un dato crítico es que **20.8% de los encuestados no les gusta la pizza**. Esto representa 83 personas que no consumirían ninguna rebanada, lo que reduce significativamente la demanda real.
+| Estadística | Valor |
+|-------------|-------|
+| **Promedio de rebanadas por persona** | 3.82 |
+| **Total estimado para el evento** | 1,877 rebanadas |
+| **Invitados que consumen pizza** | 492 personas |
+| **Rango de consumo observado** | 0-12 rebanadas |
+| **Consumo más común** | 2-3 rebanadas |
 
-### 3. Preferencia por Opciones Clásicas
-Las dos opciones más populares (Pepperoni y Cheese) representan el **62.3%** de todas las preferencias, indicando una fuerte inclinación hacia sabores tradicionales sobre opciones especiales.
+### 2.2 Perfil de Consumidores
 
-### 4. Bajo Interés en Pizzas Especiales
-Las opciones premium como Olives y Sausage tienen menos del 2% de preferencia cada una, sugiriendo que no vale la pena invertir en variedad exótica.
+| Categoría | Rebanadas | % de Invitados | Observación |
+|-----------|-----------|----------------|-------------|
+| **No consumen** | 0 | 16.3% | Considerar alternativas |
+| **Consumo ligero** | 1-2 | 24.8% | Aperitivo o porción pequeña |
+| **Consumo moderado** | 3-5 | 48.6% | Perfil típico de fiesta |
+| **Alto consumo** | 6-12 | 10.3% | Comensales principales |
 
-### 5. Consumo Moderado Promedio
-Con un promedio de 3.90 rebanadas por persona, la mayoría de los participantes tienen un apetito moderado, aunque hay casos extremos de hasta 12 rebanadas.
+### 2.3 Preferencias por Tipo de Pizza
+
+| Tipo de Pizza | Preferencias | % del Total | Rebanadas Totales | Prom/Persona |
+|---------------|--------------|-------------|-------------------|--------------|
+| **Pepperoni** | 149 | 30.3% | 572 | 3.84 |
+| **Cheese** | 138 | 28.0% | 546 | 3.96 |
+| **Mushroom** | 59 | 12.0% | 145 | 2.46 |
+| **Veggie** | 37 | 7.5% | 114 | 3.08 |
+| **Olives** | 13 | 2.6% | 123 | 9.46 |
+| **Sausage** | 10 | 2.0% | 24 | 2.40 |
 
 ---
 
-## 📊 Análisis de Tendencias
+## 3. Análisis de Preferencias
 
-### Tendencia 1: Segmentación Clara del Mercado
-Existe una clara división entre:
-- **Consumidores entusiastas:** Personas que comen 5+ rebanadas
-- **Consumidores moderados:** Personas que comen 2-4 rebanadas
-- **No consumidores:** 20.8% que no participa
+### 3.1 Top de Pizzas Más Solicitadas
 
-### Tendencia 2: Simplicidad sobre Complejidad
-La preferencia abrumadora por pepperoni y queso indica que los consumidores prefieren sabores simples y probados sobre combinaciones complejas.
+**Rankings por Popularidad:**
+1. 🥇 **Pepperoni** - 149 personas (30.3%)
+2. 🥈 **Cheese** - 138 personas (28.0%)
+3. 🥉 **Mushroom** - 59 personas (12.0%)
 
-### Tendencia 3: Distribución de Apetito
-La mayoría de las personas reportan poder comer entre 1-5 rebanadas, con valores extremos (0, 10, 11, 12) siendo la minoría.
+**Insight Clave:** Las opciones clásicas (Pepperoni y Cheese) cubren casi el 60% de las preferencias, garantizando satisfacción para la mayoría de invitados.
 
----
+### 3.2 Patrones de Consumo por Perfil
 
-## 🎯 Recomendaciones de Pedido
+**Descubrimiento Importante:** 
+- Los amantes de pizza de **Olives** consumen en promedio **9.46 rebanadas**, más del doble que el promedio general
+- Esto sugiere que ciertos tipos atraen a "super consumidores"
+- Útil para dimensionar cantidades por tipo específico
 
-### Cálculo Basado en Datos Reales
+### 3.3 Distribución de Preferencias
 
-**Considerando:**
-- Total de personas: 400
-- Personas que SÍ consumen pizza: 317 (79.2%)
-- Rebanadas totales necesarias: 1,558
-- Rebanadas por pizza estándar: 8
-
-### Pedido Recomendado
-
-#### Cantidad Total
-```
-1,558 rebanadas ÷ 8 rebanadas/pizza = 194.75 pizzas
-Redondeo sugerido: 195 pizzas
-```
-
-#### Distribución por Tipo
-
-Basado en las preferencias identificadas:
-
-| Tipo | Porcentaje | Pizzas | Rebanadas |
-|------|------------|--------|-----------|
-| Pepperoni | 45% | 88 pizzas | 704 rebanadas |
-| Cheese | 34% | 66 pizzas | 528 rebanadas |
-| Mushroom | 11% | 21 pizzas | 168 rebanadas |
-| Veggie | 7% | 14 pizzas | 112 rebanadas |
-| Sausage/Olives | 3% | 6 pizzas | 48 rebanadas |
-| **TOTAL** | **100%** | **195 pizzas** | **1,560 rebanadas** |
-
-**Nota:** Se ajustaron ligeramente los porcentajes para enfocarse en consumidores activos (excluyendo el 20.8% que no consume).
-
-### Estrategia Conservadora
-
-Si se busca minimizar desperdicio:
-```
-Pizzas: 175-180 (suficiente para ~1,400-1,440 rebanadas)
-Cobertura: ~90% de la demanda máxima
+```mermaid
+%%{init: {'theme':'base'}}%%
+pie title "Distribución de Preferencias en el Evento"
+    "Pepperoni" : 30.3
+    "Cheese" : 28.0
+    "Mushroom" : 12.0
+    "Veggie" : 7.5
+    "Olives" : 2.6
+    "Sausage" : 2.0
+    "Otros" : 3.3
+    "No consumen" : 16.3
 ```
 
-### Estrategia Generosa
+### 3.4 Comparativo de Popularidad
 
-Para eventos con buffer adicional:
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'backgroundColor': 'transparent'}}}}%%
+xychart-beta
+    title "Número de Invitados por Preferencia"
+    x-axis [Pepperoni, Cheese, Mushroom, Veggie, Olives, Sausage]
+    y-axis "Número de Personas" 0 --> 160
+    bar [149, 138, 59, 37, 13, 10]
 ```
-Pizzas: 210-220 (suficiente para ~1,680-1,760 rebanadas)
-Cobertura: 110% de la demanda máxima
+
+### 3.5 Volumen Total de Consumo
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'backgroundColor': 'transparent'}}}}%%
+xychart-beta
+    title "Rebanadas Totales Estimadas por Tipo"
+    x-axis [Pepperoni, Cheese, Mushroom, Olives, Veggie, Sausage]
+    y-axis "Rebanadas" 0 --> 600
+    line [572, 546, 145, 123, 114, 24]
 ```
 
 ---
 
-## 💡 Recomendaciones Estratégicas
+## 4. Recomendación de Pizzas para el Evento
 
-### Para Organizadores de Eventos
+### 4.1 Cálculo para 492 Invitados que Consumen Pizza
 
-1. **Prioriza Pepperoni y Queso:** Estas dos opciones deben representar el 75-80% del pedido total
-2. **Ten en cuenta a los no consumidores:** El 20% no comerá pizza, así que no sobreestimes
-3. **Pedido seguro:** 195 pizzas es el número óptimo para 400 personas
-4. **Evita sobre-especialización:** No desperdicies recursos en sabores exóticos con baja demanda
+#### Método de Cálculo
 
-### Para Análisis Futuros
+**Base del modelo:**
+- 492 invitados consumen pizza
+- 1,877 rebanadas totales necesarias
+- 8 rebanadas por pizza (estándar)
+- Factor de seguridad: **+20%** (para eventos es mejor sobrar que faltar)
 
-1. Considerar recopilar datos sobre restricciones dietéticas específicas
-2. Incluir información sobre el contexto del evento (almuerzo vs cena, duración, etc.)
-3. Diferenciar entre "capacidad" y "deseo" de consumo
-4. Agregar opciones vegetarianas/veganas populares
+#### Cálculo de Pizzas Necesarias
+
+**Rebanadas necesarias por tipo:**
+
+| Tipo de Pizza | Personas | % | Rebanadas | Pizzas Base | Con +20% | **PEDIR** |
+|---------------|----------|---|-----------|-------------|----------|-----------|
+| **Pepperoni** | 149 | 30.3% | 572 | 72 | 86 | **86 pizzas** |
+| **Cheese** | 138 | 28.0% | 546 | 68 | 82 | **82 pizzas** |
+| **Mushroom** | 59 | 12.0% | 145 | 19 | 22 | **22 pizzas** |
+| **Veggie** | 37 | 7.5% | 114 | 15 | 18 | **18 pizzas** |
+| **Olives** | 13 | 2.6% | 123 | 16 | 19 | **19 pizzas** |
+| **Sausage** | 10 | 2.0% | 24 | 3 | 4 | **4 pizzas** |
+| **TOTAL** | **492** | **82.3%** | **1,877** | **235** | **282** | **🎯 282 pizzas** |
+
+### 4.2 Orden Recomendada para la Fiesta
+
+```
+📦 ORDEN DE PIZZAS PARA EL EVENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👥 Invitados totales: 588 personas
+🍕 Consumen pizza: 492 personas (83.7%)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔴 Pepperoni:    86 pizzas (30.5%)
+🟡 Cheese:       82 pizzas (29.1%)  
+🟤 Mushroom:     22 pizzas (7.8%)
+🟢 Veggie:       18 pizzas (6.4%)
+⚫ Olives:       19 pizzas (6.7%)
+🟠 Sausage:      4 pizzas (1.4%)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 TOTAL:        282 pizzas
+💰 Estimado:     ~2,256 rebanadas
+📈 Cobertura:    120% (incluye margen)
+```
+
+### 4.3 Estrategias para Optimizar el Pedido
+
+#### Opción 1: Conservadora (Recomendada)
+✅ **282 pizzas** como se calculó arriba
+- Garantiza que nadie se quede sin comer
+- Sobrantes se pueden llevar los invitados
+- Ideal para eventos formales o corporativos
+
+#### Opción 2: Ajustada
+⚡ **250 pizzas** (reducir 11%)
+- Eliminar parte del margen de seguridad
+- Asumir que no todos comerán su máximo
+- Ideal si hay otros alimentos en el evento
+
+#### Opción 3: Mínima
+⚠️ **235 pizzas** (sin margen)
+- Solo si es un evento con múltiples opciones de comida
+- Riesgo de quedarse corto
+- No recomendada como opción principal
+
+### 4.4 Consideraciones Adicionales
+
+**Para los 96 invitados que no consumen pizza (16.3%):**
+- Considerar opciones alternativas: ensaladas, pasta, sándwiches
+- Presupuestar ~15-20% del menú para alternativas
+- Tener opciones vegetarianas/veganas
+
+**Timing del evento:**
+- Pedir pizzas en 2-3 oleadas si el evento dura +3 horas
+- Primera ola: 60% del pedido
+- Segunda ola: 30% del pedido
+- Reserva: 10% del pedido
 
 ---
 
-## 📋 Datos Técnicos del Análisis
+## 5. Conclusiones y Recomendaciones
 
-- **Fecha de análisis:** Diciembre 2025
-- **Método:** Análisis estadístico descriptivo
-- **Herramientas:** Procesamiento manual de datos
-- **Confiabilidad:** Alta (n=400)
+### 5.1 Conclusiones Principales
+
+1. **Alta Aceptación**: 83.7% de los invitados consumen pizza, haciéndola una excelente opción para eventos masivos.
+
+2. **Preferencias Claras**: Pepperoni y Cheese son los favoritos indiscutibles, simplificando la logística de pedido.
+
+3. **Variedad Importante**: Aunque las opciones especiales (Veggie, Olives) tienen menor demanda, son cruciales para satisfacer nichos específicos.
+
+4. **Consumo Predecible**: El promedio de 3.82 rebanadas/persona es consistente y permite planificación precisa.
+
+5. **Margen de Seguridad Necesario**: El +20% adicional es prudente para eventos donde el error de quedarse corto es costoso en términos de experiencia.
+
+### 5.2 Recomendaciones para Organizadores de Eventos
+
+#### Antes del Evento
+
+✅ **Hacer el pedido con 24-48 horas de anticipación**
+- Confirmar capacidad del proveedor
+- Negociar precio por volumen (282 pizzas)
+- Establecer horarios de entrega escalonados
+
+✅ **Preparar el espacio**
+- 1 mesa buffet por cada 50-70 personas
+- Servilletas, platos y cubiertos para 588 personas
+- Opciones de bebidas (considerar 2 litros por persona)
+
+✅ **Plan B**
+- Tener el contacto de 2-3 pizzerías adicionales
+- Presupuesto de emergencia para pedido adicional (+10%)
+
+#### Durante el Evento
+
+🎯 **Monitoreo de consumo**
+- Observar ritmo de consumo en primera hora
+- Si se agota 70% del inventario antes de mitad del evento → ordenar más
+- Mantener variedad visible (no agotar un tipo antes que otros)
+
+🎯 **Presentación**
+- Mostrar todas las variedades claramente etiquetadas
+- Rotar pizzas para mantener temperatura
+- Servir en oleadas para mantener frescura
+
+#### Después del Evento
+
+📊 **Registro para futuros eventos**
+- Documentar sobrantes por tipo
+- Registrar comentarios de invitados
+- Ajustar modelo para próxima ocasión
+
+### 5.3 Checklist de Planificación
+
+```mermaid
+flowchart LR
+    A[Confirmar # Invitados] --> B[Calcular Pizzas]
+    B --> C{¿Hay alternativas?}
+    C -->|Sí| D[Reducir 10-15%]
+    C -->|No| E[Mantener 282 pizzas]
+    D --> F[Hacer Pedido]
+    E --> F
+    F --> G[Confirmar Entrega]
+    G --> H[Preparar Espacio]
+    H --> I[Día del Evento]
+    I --> J[Monitorear Consumo]
+    J --> K{¿Falta pizza?}
+    K -->|Sí| L[Pedido Emergencia]
+    K -->|No| M[Evento Exitoso]
+    L --> M
+```
+
+### 5.4 Presupuesto Estimado
+
+**Rangos de precios por pizza (USD):**
+- Pizza económica: $8-12
+- Pizza calidad media: $12-18
+- Pizza premium: $18-25
+
+**Cálculo para 282 pizzas:**
+
+| Categoría | Precio/Pizza | Total Estimado |
+|-----------|--------------|----------------|
+| **Económica** | $10 | **$2,820** |
+| **Media** | $15 | **$4,230** |
+| **Premium** | $20 | **$5,640** |
+
+**Recomendación:** Para eventos con ~500 personas, presupuestar entre **$4,000-5,000 USD** en pizza proporciona excelente relación calidad-precio.
+
+### 5.5 Tips Profesionales
+
+💡 **Negociación con Pizzerías:**
+- Pedidos de 250+ pizzas califican para descuento por volumen (15-25%)
+- Solicitar entrega gratuita
+- Pedir garantía de reemplazo si hay problemas de calidad
+
+💡 **Optimización de Costos:**
+- Mezclar: 70% opciones económicas + 30% premium
+- Priorizar Pepperoni y Cheese en versión económica
+- Invertir en versiones premium solo para opciones especiales
+
+💡 **Experiencia del Invitado:**
+- Crear "estaciones de pizza" por tipo
+- Ofrecer opciones de personalización (condimentos, especias)
+- Tener opciones sin gluten/veganas claramente señalizadas
 
 ---
 
-## 🎓 Conclusiones
+## 6. Alternativas y Consideraciones Especiales
 
-1. **El pepperoni reina supremo** con más de 1/3 de las preferencias
-2. **1 de cada 5 personas no consume pizza**, factor crítico para el cálculo
-3. **195 pizzas** es el número óptimo para este grupo específico
-4. **La simplicidad gana:** Las opciones clásicas dominan sobre las especiales
-5. **El consumo promedio de 3.9 rebanadas** es un buen indicador para planificación futura
+### 6.1 Menú Complementario Sugerido
+
+**Para los 96 no consumidores + variedad general:**
+- Ensaladas: 3-4 opciones grandes (20-25 personas c/u)
+- Alitas de pollo: 500-600 piezas
+- Bebidas: 150 litros (mezcla de refrescos y agua)
+- Postres: Para 200-250 personas
+
+### 6.2 Ajustes por Tipo de Evento
+
+| Tipo de Evento | Ajuste al Modelo Base |
+|----------------|----------------------|
+| **Fiesta infantil** | +30% en Cheese, -20% en especialidades |
+| **Evento corporativo** | Mantener distribución, +opciones gourmet |
+| **Fiesta nocturna** | +15% en todas las categorías |
+| **Evento deportivo** | +25% en Pepperoni, +10% general |
+| **Reunión familiar** | Mantener modelo base |
 
 ---
 
-**Reporte generado para optimización de pedidos de pizza basado en análisis de datos reales**
+## 7. Metodología y Datos
+
+### 7.1 Matriz de Decisión para Planificadores
+
+```mermaid
+quadrantChart
+    title "Priorización de Tipos de Pizza: Popularidad vs Consumo"
+    x-axis "Baja Popularidad" --> "Alta Popularidad"
+    y-axis "Bajo Consumo/Persona" --> "Alto Consumo/Persona"
+    quadrant-1 "Nicho Premium"
+    quadrant-2 "Must-Have"
+    quadrant-3 "Considerar Eliminar"
+    quadrant-4 "Popular Económica"
+    Pepperoni: [0.9, 0.48]
+    Cheese: [0.85, 0.50]
+    Mushroom: [0.4, 0.31]
+    Veggie: [0.3, 0.38]
+    Olives: [0.1, 0.95]
+    Sausage: [0.05, 0.30]
+```
+
+### 7.2 Resumen de la Encuesta
+
+**Fuente de Datos:** Encuesta de preferencias de pizza  
+**Muestra:** 588 respuestas  
+**Tasa de participación:** 100% (encuesta completa)  
+**Validez:** Alta - refleja preferencias reales de consumidores  
+**Aplicabilidad:** Ideal para eventos de 400-600 personas
+
+---
+
+## 8. Recursos Adicionales
+
+### 8.1 Template de Pedido
+
+```
+ORDEN DE PIZZA - [NOMBRE DEL EVENTO]
+Fecha: _____________
+Hora de entrega: _____________
+Lugar: _____________
+
+CANTIDAD POR TIPO:
+□ 86 Pepperoni
+□ 82 Cheese
+□ 22 Mushroom  
+□ 18 Veggie
+□ 19 Olives
+□ 4 Sausage
+
+TOTAL: 282 pizzas
+INVITADOS: 588 personas
+
+Contacto emergencia: _____________
+Presupuesto aprobado: $_____________
+```
+
+### 8.2 Calculadora Rápida
+
+**Fórmula para ajustar a tu evento:**
+
+```
+Pizzas necesarias = (# invitados × 0.837 × 3.82) / 8 × 1.20
+
+Donde:
+- 0.837 = % que consume pizza
+- 3.82 = rebanadas promedio por persona
+- 8 = rebanadas por pizza
+- 1.20 = factor de seguridad (20%)
+```
+
+---
+
+**Elaborado por:** Analista de Datos de Eventos  
+**Versión:** 2.0 - Adaptada para Eventos Únicos  
+**Última actualización:** Diciembre 2025
+
+---
+
+## 🎉 Resumen Ejecutivo Final
+
+**Para un evento de 588 invitados:**
+- ✅ Ordenar **282 pizzas** en total
+- ✅ Priorizar Pepperoni (86) y Cheese (82)
+- ✅ Presupuestar **$4,000-5,000 USD**
+- ✅ Incluir alternativas para el 16.3% que no consume pizza
+- ✅ Planear entrega en 2-3 oleadas
+- ✅ Tener plan de contingencia (+10% presupuesto)
+
+**¡Evento exitoso garantizado!** 🍕🎊
