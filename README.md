@@ -2,7 +2,7 @@
 
 ¡Hola! 👋 Bienvenida a mi repositorio de aprendizaje. Aquí estaré documentando mi progreso, retos y proyectos realizados durante el programa **Technolochicas 2025** en el área de **Ciencia de Datos**.
 
-El objetivo de este espacio es consolidar los conocimientos adquiridos en Python, análisis de datos, visualización y estadística aplicada.
+El objetivo de este espacio es consolidar los conocimientos adquiridos como introducción a la programación, pensamiento lógico y uso de la aplicación de MIT App Inventor 2 para el desarrollo de aplicaciones móviles con ciencia de datos.
 
 ---
 
