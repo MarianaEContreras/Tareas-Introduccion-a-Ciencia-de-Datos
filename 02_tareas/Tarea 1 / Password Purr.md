@@ -1,4 +1,4 @@
-### 🐾 Tarea: Password PurR pPlus 🐱
+### 🐾 Tarea: Password Purr Plus 🐱
 
 Esta tarea forma parte del módulo de **Introducción a Ciencia de Datos** en el programa Technolochicas 2025. Password Purr Plus es una versión mejorada de la clásica aplicación "Hello Purr" de MIT App Inventor. Esta versión eleva la experiencia del usuario integrando capas de seguridad, retroalimentación táctil y visual, y elementos de gamificación.
 
